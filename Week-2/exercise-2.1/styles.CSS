@@ -19,10 +19,24 @@ padding: 10px;
 max-width: 600px;
 
 }
+.articleMain{
+  max-width: 600px;
+  padding-right: 10px;
+}
+.articleExtra{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
 
 .articleItem{
-  padding:0px 20px;
+  padding-right:10px;
   margin-bottom: 60px;
+}
+
+.articleItemExtra{
+  padding-right: 10px;
+  max-width: 390px;
 }
 
 .inputs{
