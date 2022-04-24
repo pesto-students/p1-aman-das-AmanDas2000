@@ -4,6 +4,7 @@ function createIncrement() {
         count++;
     }
     
+
     let message = `Count is ${count}`;
     function log() {
         console.log(message);
@@ -16,7 +17,6 @@ const [increment, log] = createIncrement();
 increment();
 increment();
 increment();
-
 log();
 
 
