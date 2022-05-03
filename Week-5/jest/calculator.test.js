@@ -6,6 +6,16 @@ describe("Calculator tests", () => {
    let result = mathOperations.sum(3,4)
    expect(result).toBe(7);
  });
+  
+ test('adding 2 stings 3 and 4 should return 34', () => {
+  let result = mathOperations.sum('3','4')
+  expect(result).toBe('34');
+ });
+  
+ test('adding 1 sting 3 and 1 number 4 should return 34 as string', () => {
+  let result = mathOperations.sum(3,'4')
+  expect(result).toBe('34');
+ });
  
  test("subtracting 5 from 10 should return 5", () => {
    let result = mathOperations.diff(10,5)
