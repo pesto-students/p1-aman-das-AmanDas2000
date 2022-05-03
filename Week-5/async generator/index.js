@@ -14,11 +14,6 @@ const start = async () => {
 
 start();
 
-const doTask1 = () => { console.log('task 1'); doTask2() };
-const doTask2 = () => { console.log('task 2'); doTask3() };
-const doTask3 = () => console.log('task 3');
-
-doTask1();
 
 
 
