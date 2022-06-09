@@ -1,0 +1,33 @@
+.header{
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #cecece;
+  box-shadow: #cecece 0px 0px 12px 0px !important;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.linkWrap{
+    display: flex;
+    /* width:40%; */
+    justify-content: space-between;
+}
+
+.links{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+

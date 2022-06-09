@@ -1,0 +1,59 @@
+.home{
+    text-align: center;
+}
+
+.homeContainer{
+    /* max-width: 1200px; */
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bannerText{
+    font-size: 50px;
+}
+
+.shortnerWrap{
+    padding: 20px;
+}
+
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+
+.button{
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.result{
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.resultWrap{
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+}
+
+.listWrap{
+    padding: 30px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shortOutput{
+    margin-left: 10px;
+}
+

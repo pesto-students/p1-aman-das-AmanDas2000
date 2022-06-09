@@ -1,0 +1,84 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+import { BsArrowRight } from 'react-icons/bs';
+import './style.css';
+
+function Home() {
+  const [text, setText] = useState('');
+  const [result, setResult] = useState('');
+  const [list, setList] = useState([]);
+  const [copy, setCopy] = useState('Copy to clipboard');
+
+  const changeHandler = (e) => {
+    setText(e.target.value);
+  };
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    axios.get(`https://api.shrtco.de/v2/shorten?url=${text}`).then((res) => {
+      setResult(res.data.result.full_short_link);
+      setList((prev) => [
+        ...prev,
+        {
+          url: text,
+          shortUrl: res.data.result.full_short_link,
+        },
+      ]);
+    });
+    setText('');
+  };
+
+  const threeDots = (string) => {
+    
+      let text = string.slice(0, 40);
+      text=text + ' . . . ';
+      return text;
+    
+  }
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(result);
+    setCopy('Copied to clipboard');
+  };
+
+  return (
+    <div className="home">
+      <div className="homeContainer">
+        <div className="bannerText">URL shortner</div>
+        <div>https://postsrc.com/code-snippets/how-to-push-into-state-array-in-reactjs</div>
+        <form onSubmit={(e) => submitHandler(e)} className="shortnerWrap">
+          <input type="text" placeholder="Enter url here" value={text} onChange={(e) => changeHandler(e)} />
+          <button className="button" onClick={(e) => submitHandler(e)}>
+            Shorten
+          </button>
+        </form>
+        <div className="resultWrap">
+          {result ? (
+            <div className="result">
+              <div>
+                {result} <button onClick={() => copyToClipboard()}>{copy}</button>
+              </div>
+            </div>
+          ) : (
+            <div></div>
+          )}
+        </div>
+
+        <div className="listWrap">
+          {list.length?<div>Your Shortened URLs</div>:null}
+          <br />
+          {list.map((item, i) => (
+            <div className="list">
+              <div>
+                {i + 1} . {threeDots(item.url)} <BsArrowRight/>
+              </div>
+              <div className='shortOutput'> {item.shortUrl}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Home;
