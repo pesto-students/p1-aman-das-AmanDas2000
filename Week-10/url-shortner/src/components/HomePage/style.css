@@ -8,52 +8,146 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid white;
+  border-radius: 10px;
+  z-index: 1;
 }
 
 .bannerText{
+    padding-top: 30px;
     font-size: 50px;
+    color: white;
 }
 
 .shortnerWrap{
-    padding: 20px;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    flex-wrap: wrap;
 }
 
 input{
-    width: 400px;
+    width: 80%;
+    padding: 10px;
     height: 30px;
     border-radius: 5px;
     border: 1px solid gray;
     margin-top: 10px;
+    font-size: 20px;
+    background-color: #777;
+    color:white
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+
 .button{
-    height: 25px;
+    height: 45px;
+    width: 150px;
     border-radius: 10px;
     border: 1px solid gray;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: aquamarine;
 }
 
 .result{
-    padding: 30px;
+    padding: 20px 30px;
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    /* background-color: #eee; */
 }
 
 .resultWrap{
     margin: 0 auto;
-    padding: 20px;
-    width: 50%;
+    padding: 30px;
+    /* width: 60%; */
 }
 
 .listWrap{
     padding: 30px;
+    color: white;
 }
 
 .list{
     display: flex;
     justify-content: space-between;
+    border:1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .shortOutput{
     margin-left: 10px;
 }
 
+.recent{
+    text-align: start;
+}
+
+
+
+
+/* CSS */
+.button-30 {
+    margin-top: 10px;
+    width:170px;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 2px 4px,rgba(255, 255, 255, 0.3) 0 7px 13px -3px,#000000 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  /* font-family: "JetBrains Mono",monospace; */
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}

@@ -3,7 +3,7 @@ import './style.css'
 
 const Footer = () => {
   return (
-    <div className='footer'>Footer</div>
+    <div className='footer'>Developed with ♥ in India</div>
   )
 }
 

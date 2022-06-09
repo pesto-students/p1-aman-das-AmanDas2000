@@ -30,7 +30,7 @@ function Home() {
 
   const threeDots = (string) => {
     
-      let text = string.slice(0, 40);
+      let text = string.slice(0, 50);
       text=text + ' . . . ';
       return text;
     
@@ -45,33 +45,35 @@ function Home() {
     <div className="home">
       <div className="homeContainer">
         <div className="bannerText">URL shortner</div>
-        <div>https://postsrc.com/code-snippets/how-to-push-into-state-array-in-reactjs</div>
+        {/* <div>https://postsrc.com/code-snippets/how-to-push-into-state-array-in-reactjs</div> */}
         <form onSubmit={(e) => submitHandler(e)} className="shortnerWrap">
           <input type="text" placeholder="Enter url here" value={text} onChange={(e) => changeHandler(e)} />
-          <button className="button" onClick={(e) => submitHandler(e)}>
+          <button className="button-30" onClick={(e) => submitHandler(e)}>
             Shorten
           </button>
         </form>
         <div className="resultWrap">
           {result ? (
             <div className="result">
-              <div>
-                {result} <button onClick={() => copyToClipboard()}>{copy}</button>
-              </div>
+              
+                <div>{result}</div>
+                <button className='button-30' onClick={() => copyToClipboard()}>{copy}</button>
+              
             </div>
           ) : (
             <div></div>
           )}
         </div>
-
+        {list.length ? <hr /> : null}
         <div className="listWrap">
-          {list.length?<div>Your Shortened URLs</div>:null}
+          {list.length?<div className='recent'>Recentl URLs</div>:null}
           <br />
           {list.map((item, i) => (
             <div className="list">
               <div>
-                {i + 1} . {threeDots(item.url)} <BsArrowRight/>
+                {i + 1} . {threeDots(item.url)} 
               </div>
+              <div><BsArrowRight/></div>
               <div className='shortOutput'> {item.shortUrl}</div>
             </div>
           ))}

@@ -4,15 +4,16 @@ import './style.css';
 
 const Header = () => {
   let activeStyle = {
-      textDecoration: 'underline',
-      color:'green'
+      color:'cyan'
   };
 
 
   return (
     <div className="header">
       <div className="container">
-        <div className="logo">shortURL</div>
+        <div className="logo"><NavLink to="/" className="links">
+              Shortly
+            </NavLink></div>
         <div className="linkWrap">
           <div>
             <NavLink to="/" className="links" style={({ isActive }) => (isActive ? activeStyle : undefined)}>
