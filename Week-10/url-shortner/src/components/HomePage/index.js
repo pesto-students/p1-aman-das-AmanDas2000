@@ -8,12 +8,14 @@ function Home() {
   const [result, setResult] = useState('');
   const [list, setList] = useState([]);
   const [copy, setCopy] = useState('Copy to clipboard');
+  const [spinner, setSpinner] = useState(false)
 
   const changeHandler = (e) => {
     setText(e.target.value);
   };
 
   const submitHandler = async (e) => {
+    setSpinner(true);
     e.preventDefault();
     axios.get(`https://api.shrtco.de/v2/shorten?url=${text}`).then((res) => {
       setResult(res.data.result.full_short_link);
@@ -24,7 +26,8 @@ function Home() {
           shortUrl: res.data.result.full_short_link,
         },
       ]);
-    });
+      setSpinner(false);
+    }).catch(err => { alert('Enter valid URL', err); setSpinner(false)});
     setText('');
   };
 
@@ -52,6 +55,7 @@ function Home() {
             Shorten
           </button>
         </form>
+        {spinner?<div className='loader'>spinner</div>:null}
         <div className="resultWrap">
           {result ? (
             <div className="result">
@@ -64,6 +68,7 @@ function Home() {
             <div></div>
           )}
         </div>
+        
         {list.length ? <hr /> : null}
         <div className="listWrap">
           {list.length?<div className='recent'>Recentl URLs</div>:null}
