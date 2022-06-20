@@ -65,12 +65,11 @@ create table storeItem(
 
 show tables;
 
---INSERTIONS of dummy data
 
 insert into city values(1,'Bhubaneswar','Odisha'),(2,'Delhi','Delhi'),(3,'Pune','Maharashtra'),(4,'Jaipur','Rajasthan'),(5,'Patna','Bihar');
 
 insert into warehouse values
--- (1,'w1','gothapatna','{"extra":"something"}',1),
+(1,'w1','gothapatna','{"extra":"something"}',1),
 (2,'w2','patia','{"extra":"something"}',1),
 (3,'w1','ncr','{"extra":"something"}',2),
 (4,'w2','chandi chowk','{"extra":"something"}',2),
@@ -96,7 +95,7 @@ insert into store values
 (12,'bara',8),
 (13,'tera',8),
 (14,'chowda',9),
-(15,'pandra',10);
+(15,'pandra',10),
 (16,'Sola',8);
 
 insert into customer values
@@ -166,7 +165,7 @@ insert into orderItem(oId,itemNo,quantity) values
 (17,4,5),
 (20,5,3),
 (21,4,4),
-(1,5,2);
+(1,5,2),
 (21,2,4),
 (19,3,2);
 
@@ -190,6 +189,9 @@ insert into storeItem values
 (2,14,4),
 (3,15,5),
 (4,15,10);
+
+
+
 
 
 
