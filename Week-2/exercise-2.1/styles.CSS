@@ -1,0 +1,91 @@
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+
+
+.main{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 10px;
+}
+
+.article{
+max-width: 600px;
+
+}
+.articleMain{
+  max-width: 600px;
+  padding-right: 10px;
+}
+.articleExtra{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.articleItem{
+  padding-right:10px;
+  margin-bottom: 60px;
+}
+
+.articleItemExtra{
+  padding-right: 10px;
+  max-width: 390px;
+}
+
+.inputs{
+   display: flex;
+   flex-direction: column;
+
+}
+
+.form{
+  margin-left: auto;
+  margin-right: auto;
+    max-width: 1200px;
+}
+
+input[type=text], input[type=password],input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .radioButtons{
+    display: flex;
+    max-width:500px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0px
+  }
+
+  .registerbtn{
+    padding: 10px;
+    border-radius: 20px;
+    width:200px;
+    cursor: pointer;
+  }
+
+  .registerbtn:hover{
+    background-color: aqua;
+  }

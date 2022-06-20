@@ -1,0 +1,6 @@
+1. In school timings(7am - 9am), the speed limit will be 20km/hr.
+2. Parking of vehicles on the road at the time of heavy traffic will be punishable.
+3. From 11pm - 6am, all traffic lights will be disabled as the traffic is very low.
+4. The time difference between traffic lights can be increased for differently abled people.
+5. The timings for red light will be calculated according to the amount of traffic.
+6. If the rate of traffic in one direction is more than a particular limit (which will be set in the system) , we declare that particular road to be one way until the traffic becomes light.

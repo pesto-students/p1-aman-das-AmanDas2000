@@ -1,0 +1,20 @@
+Web Browsers: A web Browser is basically a software that helps user connect with the world wide web. Its primary function is to render HTML pages which contain text, links, and references to images and other items like CSS and JavaScript functions.
+
+High level structure of web browser:
+
+1. UI: This means the user interface of the browser which is used by the user to enter the URL (address bar), back and forward button, menus etc.
+2. Browser engine: connects the UI and the rendering engine.
+3. Rendering engine:  Its primary function is to render HTML pages which involves parsing html and CSS and display the parsed content.
+4. Networking: these are protocols by which the browser makes requests to the www like HTTP requests.
+5. UI Backend: The backend exposes a generic interface that is not platform specific. Underneath it uses operating system user interface methods. This helps display basic widgets.
+6. JavaScript interpreter: An interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. Inline scripts that come after external scripts are held until all external scripts that came before them have loaded and run. Basically JavaScript is  executed in the order they are encountered in the page. 
+7. Data storage: this is the data storage of browser where the browser may store data locally, cookies, etc. The technologies include local storage, indexed DB etc.
+
+Main flow:
+
+1. User enter the URL in browser UI
+2. Browser makes a HTTP request to the web servers (World Wide Web) and recieves a HTTP response in form of HTML, CSS and JS.
+3. Parsing HTML: the engine parses the HTML and constructs a DOM tree which is also called a content tree.
+4. Parsing CSS: the styles sheets are parsed and with the DOM tree the Render tree is constructed. Now we know what is to be displayed on the browser.
+5. Generating layout: now precise coordinates of what will appear where is generated which is called layout and after this step the engine is ready for the paint process.
+6. Painting: this step includes traversing the layout and paint the page on the browser.

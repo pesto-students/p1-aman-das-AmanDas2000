@@ -1,0 +1,37 @@
+PR
+Smarto whiteboard 
+Now Smarto LMS with sharable real-time whiteboard.
+
+We are proud to announce the addition of white board to our LMS, video conferencing and chatrooms for schools and colleges.
+With our already great LMS which has over 1000 students and teachers onboard, the new whiteboard service will help sharing and collaboration very easy and hassle free as the whole chat room, voice communications and white board will be present in one complete application.
+
+Our LMS i.e. chat rooms and real-time video conferencing for students and teachers helps the process of teaching very effective in these pandemic times but has a major flaw which is the users have to use a different application if they want to share notes, diagrams or and other visual illustration or text and this leads to inconsistency across users. Integrating a white board service in our LMS will help solve this issue and make this product the best LMS for any institute.
+
+The whiteboard helps keep everything in one application now i.e. the user doesn't have to jump between multiple applications to share notes and diagrams. It contains multiple features including drawing, text and image input, paint like functionality and real time shareing of the board across users.
+
+"Smarto is now the best one stop solution for online teaching and learning management system" - said Rahul Desai, CEO @ Smarto .
+
+Log into your Smarto account today and start using the whiteboard today. Just press cmd+w which will open the board or there is a small white board icon on the top left corner in our latest release.
+
+"Smarto has made the online era of teaching a breeze"- Nishant Mishra, Dean @ IIIT Bhubaneswar
+
+Visit Dclass.com for step by step process to start your Smarto today.
+
+FAQs
+1. How can I start using Smarto whiteboard for free?
+Ans - You can register on the Smarto website and download the application from the website itself. After downloading, you can simply log in into your account and use the shortcut cmd+w to start using the application. You will get a 7 day free trial from the date of registration.
+
+2. How can I buy the Smarto LMS Service for my institution?
+Ans - You can log on to our website and register yourself as an institution(with the official institution e-mail id). After the registration, you will see an option to browse all the plans. From here, you can select any plan suitable and start using it right away after the payment. 
+
+3. How many users can use the service from one plan?
+Ans - The maximum number of users considering all the plans is 200 i.e. 200 people can use the LMS to teach and share resources.
+
+4. How this service is efficient for students?
+Ans - This service is the one stop solution for everything related to the studies of students. It can be sharing of notes, availability of video lectures, or teaching with the help of the feature-rich Smarto Whiteboard
+
+5. What all features are provided to the teacher ? 
+Ans - Smarto allows teacher to draw and share the board with students, also file sharing makes it easy to share notes among everyone. Our service gives freedom of scribbling on the notes or uploaded documents.
+
+6. How to use Smarto in video meetings ? 
+Ans - Create a meeting and select share white board option. Select this option opens a whiteboard and share the link of board with all the people present in the meeting. Student and teacher can simultaneously edit the board making the learning process interactive.
