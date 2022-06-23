@@ -1,0 +1,79 @@
+.row{
+    display: flex;
+}
+
+.red{
+    width:200px;
+    height: 200px;
+    background-color: red;
+    transform-origin: top left;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .red:hover{
+    transform: rotate(90deg);
+} */
+
+.yellow{
+    width:200px;
+    height: 200px;
+    background-color: yellow;
+    transform-origin: top right;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .yellow:hover{
+    transform: rotate(-90deg);
+} */
+
+.blue{
+    width:200px;
+    height: 200px;
+    background-color: blue;
+    transform-origin: bottom left;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .blue:hover{
+    transform: rotate(-90deg);
+} */
+
+.green{
+    width:200px;
+    height: 200px;
+    background-color: green;
+    transform-origin: bottom right;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .green:hover{
+    transform: rotate(90deg);
+} */
+
+.message{
+   position: absolute;
+   top:auto;
+   left:auto; 
+   z-index: -1;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+    /* background-color: aqua; */
+}
+
+.main:hover .red{
+    transform: rotate(90deg);
+}
+.main:hover .yellow{
+    transform: rotate(-90deg);
+}
+.main:hover .blue{
+    transform: rotate(-90deg);
+}
+.main:hover .green{
+    transform: rotate(90deg);
+}
