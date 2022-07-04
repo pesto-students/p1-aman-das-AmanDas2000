@@ -1,13 +1,11 @@
 .home{
+    padding: 20px;
     text-align: center;
 }
 
 .homeContainer{
-    /* max-width: 1200px; */
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin:auto;
   width: 100%;
   max-width: 1200px;
   border: 1px solid white;
@@ -17,12 +15,12 @@
 
 .bannerText{
     padding-top: 30px;
-    font-size: 50px;
+    font-size: 30px;
     color: white;
 }
 
 .shortnerWrap{
-    padding: 50px 30px;
+    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +59,7 @@ input{
 }
 
 .result{
-    padding: 20px 30px;
+    padding: 10px 20px;
     border: 1px solid gray;
     border-radius: 10px;
     color: white;
