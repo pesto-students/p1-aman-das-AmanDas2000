@@ -5,7 +5,7 @@ const morgan=require('morgan')
 
 const user = require('./routes/auth')
 const assets = require('./routes/assets')
-// const comment=require('./routes/comment')
+const transaction=require('./routes/transaction')
 
 require('dotenv').config();
 
@@ -28,7 +28,7 @@ connection.once('open', () => {
 
 app.use('/api/user', user)
 app.use('/api/assets', assets)
-// app.use('/api/comment',comment)
+app.use('/api/transaction', transaction)
 
 app.listen(port, () => {
     console.log(`Server is running on: ${port}`);
