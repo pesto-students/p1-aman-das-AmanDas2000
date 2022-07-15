@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useMemo, memo, useCallback } from 'react';
 import axios from 'axios';
 import { BsArrowRight } from 'react-icons/bs';
 import './style.css';
@@ -8,7 +8,8 @@ function Home() {
   const [result, setResult] = useState('');
   const [list, setList] = useState([]);
   const [copy, setCopy] = useState('Copy to clipboard');
-  const [spinner, setSpinner] = useState(false)
+  const [spinner, setSpinner] = useState(false);
+  const [count, setCount] = useState(0)
 
   const changeHandler = (e) => {
     setText(e.target.value);
@@ -44,6 +45,27 @@ function Home() {
     setCopy('Copied to clipboard');
   };
 
+  const urlList=useCallback(function urlList() {
+    return <div className="listWrap">
+      {list.length ? <div className='recent'>Recentl URLs</div> : null}
+      <br />
+      {window.console.log('hi')}
+      {list.map((item, i) => (
+        <div className="list">
+          <div>
+            {i + 1} . {threeDots(item.url)}
+          </div>
+          <div><BsArrowRight /></div>
+          <div className='shortOutput'> {item.shortUrl}</div>
+        </div>
+      ))}
+    </div>
+  });
+
+  const console = () => {
+    console.log(5)
+  }
+
   return (
     <div className="home">
       <div className="homeContainer">
@@ -70,19 +92,8 @@ function Home() {
         </div>
         
         {list.length ? <hr /> : null}
-        <div className="listWrap">
-          {list.length?<div className='recent'>Recentl URLs</div>:null}
-          <br />
-          {list.map((item, i) => (
-            <div className="list">
-              <div>
-                {i + 1} . {threeDots(item.url)} 
-              </div>
-              <div><BsArrowRight/></div>
-              <div className='shortOutput'> {item.shortUrl}</div>
-            </div>
-          ))}
-        </div>
+        {urlList()}
+        
       </div>
     </div>
   );
